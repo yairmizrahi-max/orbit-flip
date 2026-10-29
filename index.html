@@ -6402,7 +6402,7 @@ return new `+this.key+`();
       <div class="home-play">
         <button class="btn gold big pulse" data-a="play">${pt.play} ${rt("play")}</button>
         <div class="sub">${rt("level")} ${L.levels[I-1].sector}-${(I-1)%Pt+1}</div>
-        ${tr(M)?`<button class="btn purple" data-a="endless">∞ ${rt("endless")}${M.endless.best?` · ${rt("best")} ${M.endless.best}`:""}</button>`:`<button class="btn purple locked" disabled>${pt.lock} ∞ ${rt("endless")}<small class="lock-note">${rt("endlessLocked")}</small></button>`}
+        ${tr(M)?`<button class="btn purple" data-a="endless">∞ ${rt("endless")}${M.endless.best?` · ${rt("best")} ${M.endless.best}`:""}</button>`:""}
       </div>
       <div class="home-row">
         <button class="menu-icon c1" data-a="levels"><span class="rbtn">${pt.planet}</span>${rt("levels")}</button>
